@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor>
+    <parser>
+        <target>doc</target>
+        <visibility>public</visibility>
+    </parser>
+    <transformer>
+        <target>doc</target>
+    </transformer>
+    <files>
+        <directory>src</directory>
+    </files>
+    <transformations>
+        <template name="clean"/>
+    </transformations>
+    <title>FedEx Cross Border PHP SDH</title>
+</phpdocumentor>

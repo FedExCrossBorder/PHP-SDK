@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./tests/bootstrap.php"
+         colors="true"
+         forceCoversAnnotation="true">
+
+    <php>
+        <server name="FCB_CLIENT_ID" value="[YOUR_CLIENT_ID]" />
+        <server name="FCB_CLIENT_SECRET" value="[YOUR_CLIENT_SECRET]" />
+        <server name="FCB_PARTNER_KEY" value="[YOUR_PARTNER_KEY]" />
+        <server name="FCB_MERCHANT_KEY" value="[YOUR_MERCHANT_KEY]" />
+        <server name="FCB_MERCHANT_URL" value="https://services.crossborder.fedex.com" />
+        <server name="FCB_WEBAPP_URL" value="https://purplepay.crossborder.fedex.com" />
+        <server name="FCB_TRACKING_URL" value="https://zend-tools.crossborder.fedex.com" />
+        <server name="FCB_OAUTH_URL" value="https://secure.crossborder.fedex.com" />
+        <server name="FCB_WS_URL" value="https://api.crossborder.fedex.com/services/v45?wsdl" />
+        <server name="FCB_CHECKOUT_URL" value="https://checkout.crossborder.fedex.com" />
+    </php>
+
+    <testsuites>
+        <testsuite>
+            <directory>tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <groups>
+        <exclude>
+            <group>todo</group>
+        </exclude>
+    </groups>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src</directory>
+            <exclude>
+                <directory>src/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,28 @@
+{
+  "name": "fedexcrossborder/sdk-php",
+  "description": "FedEx Cross Border SDK for PHP",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": ">=5.4",
+    "mtdowling/jmespath.php": "~2.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-soap": "*",
+    "ext-dom": "*",
+    "ext-simplexml": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8",
+    "guzzlehttp/guzzle": "^5.3.1|^6.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "FedExCrossBorder\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --color=always",
+    "test-coverage": "phpunit --coverage-clover clover.xml"
+  }
+ }
