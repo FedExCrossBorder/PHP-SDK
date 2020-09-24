@@ -1,5 +1,5 @@
 {
-  "name": "fedexcrossborder/sdk-php",
+  "name": "fedex/crossborder-sdk-php",
   "description": "FedEx Cross Border SDK for PHP",
   "type": "library",
   "license": "proprietary",
